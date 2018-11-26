@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <TextView
+        android:id="@+id/tex_maint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/str_des_maint"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox_aircon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/str_checkBox_aircon"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <CheckBox
+        android:id="@+id/checkBox_stove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/str_checkBox_stove"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <CheckBox
+        android:id="@+id/checkBox_electric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="100dp"
+        android:text="@string/str_checkBox_electric"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <CheckBox
+        android:id="@+id/checkBox_water"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/str_checkBox_water"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <CheckBox
+        android:id="@+id/checkBox_pipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="196dp"
+        android:text="@string/str_checkBox_pipe"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <CheckBox
+        android:id="@+id/checkBox_bathroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="244dp"
+        android:text="@string/str_checkBox_bathroom"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <CheckBox
+        android:id="@+id/checkBox_other"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="292dp"
+        android:text="@string/str_checkBox_other"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/tex_maint"
+        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+
+    <EditText
+        android:id="@+id/input_tel"
+        android:layout_width="288dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="104dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/str_input_tel"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_bathroom"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_bathroom" />
+
+    <EditText
+        android:id="@+id/input_other"
+        android:layout_width="208dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/str_input_other"
+        app:layout_constraintStart_toStartOf="@+id/checkBox_bathroom"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_bathroom" />
+
+    <Button
+        android:id="@+id/button_maintenance_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ยืนยัน"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_tel" />
+
+</android.support.constraint.ConstraintLayout>
