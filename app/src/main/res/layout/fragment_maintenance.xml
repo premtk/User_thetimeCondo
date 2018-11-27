@@ -23,8 +23,8 @@
         android:id="@+id/checkBox_aircon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="8dp"
         android:text="@string/str_checkBox_aircon"
         android:textSize="18sp"
@@ -47,32 +47,28 @@
         android:id="@+id/checkBox_electric"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="16dp"
         android:text="@string/str_checkBox_electric"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/tex_maint"
-        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox_stove"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_stove" />
 
     <CheckBox
         android:id="@+id/checkBox_water"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginLeft="4dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="16dp"
         android:text="@string/str_checkBox_water"
         android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="@+id/tex_maint"
-        app:layout_constraintTop_toBottomOf="@+id/tex_maint" />
+        app:layout_constraintStart_toStartOf="@+id/checkBox_electric"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox_electric" />
 
     <CheckBox
         android:id="@+id/checkBox_pipe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="196dp"
         android:text="@string/str_checkBox_pipe"
         android:textSize="18sp"
@@ -106,28 +102,29 @@
     <EditText
         android:id="@+id/input_tel"
         android:layout_width="288dp"
-        android:layout_height="44dp"
+        android:layout_height="0dp"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="411dp"
+        android:layout_marginBottom="3dp"
         android:autofillHints=""
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/str_input_tel"
+        android:hint="@string/str_input_tel"
         app:layout_constraintStart_toStartOf="@+id/checkBox_bathroom"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox_bathroom" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/input_other"
         android:layout_width="208dp"
         android:layout_height="48dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
         android:layout_marginTop="56dp"
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="@string/str_input_other"
+        android:hint="@string/str_input_other"
         app:layout_constraintStart_toStartOf="@+id/checkBox_bathroom"
         app:layout_constraintTop_toBottomOf="@+id/checkBox_bathroom" />
 
@@ -138,6 +135,20 @@
         android:text="ยืนยัน"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_tel" />
+
+    <EditText
+        android:id="@+id/numroom"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="numroom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_tel" />
 
 </android.support.constraint.ConstraintLayout>

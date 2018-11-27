@@ -11,6 +11,9 @@
     <!--hardsai-->
     <string name="bg_room">bg_room</string>
     <string name="room">room</string>
+
+    <string name="detail_item_announ">Detail</string>
+    <string name="title_item_announ">Title</string>
     <!--endhardsai-->
 
     <!--prem-->
